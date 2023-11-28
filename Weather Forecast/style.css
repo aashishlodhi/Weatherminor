@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    background: linear-gradient(rgb(58, 58, 126) , rgb(115, 149, 241));
+    font-family: sans-serif;
+    color:whitesmoke;
+    font-size: 20px;
+}
+.container{
+    /* margin: 0 auto; */
+    padding: 30px;
+    border: 5px solid #0000001d;
+    box-shadow: 4px 4px 10px #414040;
+    /* width: min(500px,100%); */
+}
+.location{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 30px;   
+}
+.location input{
+    outline: none;
+    font-size: 25px;
+    padding: 14px 20px;
+    border-radius: 9em 0em 0em 9em;
+    border: 2px solid grey;
+    border-right: none;
+    background-color: transparent;
+    color: yellow;
+}
+button.search{
+    outline: none;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 0em 9em 9em 0em;
+    border: 2px solid grey;
+    background-color: transparent;
+    border-left: none;
+}
+svg{
+    color:grey;
+}
+svg:hover{
+    color:yellow;
+}
+h2{
+    font-size: 1.6em;
+    margin: 15px 0px;
+    /* color: #fecd1a; */
+}
+.temperature{
+    margin-top: 30px;
+    display: flex;
+}
+.temperature-degree{
+    font-size: 65px;
+    
+    
+}
+.degree{
+    font-size: 40px;
+}
+.temperature-description{
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .location input{
+        width: 180px;
+    }
+    .container{
+        width: 80%;
+    }
+    .location{
+        justify-content: flex-start;
+    }
+}

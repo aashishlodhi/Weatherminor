@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="left">
+                <div id="logo">
+                    <h1>Weather.com</h1>
+                </div>
+            </div>
+
+            <div id="right">
+                <div class="links" id="Home">
+                    <a href="">
+                        <h1>Home</h1>
+                    </a>
+                </div>
+                <div class="links" id="About">
+                    <a href="">
+                        <h1>About</h1>
+                    </a>
+                </div>
+                <div class="links" id="Mail">
+                    <a href="">
+                        <h1> Mail</h1>
+                    </a>
+                </div>
+                <div class="links" id="RTO">
+                    <a href="">
+                        <h1>Help</h1>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="content">
+            <h1>
+                Weather Reporter<br>
+                <h2> weather report of current location when you open up...</h2>
+            </h1>
+
+            <div id="contentd">
+                <p>Get weather details such as temperature, type of weather, humidity, wind speed. <br>
+                    An add free experience just for you ...
+                </p>
+                <a href="index.html"><button>
+                        Check Now
+                    </button></a>
+            </div>
+
+        </div>
+        <div id="image">
+            <svg class="animated" id="freepik_stories-weather" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"
+                version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+                <style>
+                    svg#freepik_stories-weather:not(.animated) .animable {
+                        opacity: 0;
+                    }
+
+                    svg#freepik_stories-weather.animated #freepik--weather-widget--inject-2 {
+                        animation: 1s 1 forwards ease-in slideDown, 1.5s Infinite linear wind;
+                        animation-delay: 0s, 1s;
+                    }
+
+                    svg#freepik_stories-weather.animated #freepik--Character--inject-2 {
+                        animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideLeft;
+                        animation-delay: 0s;
+                    }
+
+                    @keyframes slideDown {
+                        0% {
+                            opacity: 0;
+                            transform: translateY(-30px);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+
+                    @keyframes wind {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+
+                        25% {
+                            transform: rotate(1deg);
+                        }
+
+                        75% {
+                            transform: rotate(-1deg);
+                        }
+                    }
+
+                    @keyframes slideLeft {
+                        0% {
+                            opacity: 0;
+                            transform: translateX(-30px);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }
+                    }
+                </style>
+                <g id="freepik--background-complete--inject-2" class="animable"
+                    style="transform-origin: 250px 228.23px;">
+                    <rect y="382.4" width="500" height="0.25"
+                        style="fill: rgb(235, 235, 235); transform-origin: 250px 382.525px;" id="elweivbnp0y8k"
+                        class="animable"></rect>
+                    <rect x="416.78" y="398.49" width="33.12" height="0.25"
+                        style="fill: rgb(235, 235, 235); transform-origin: 433.34px 398.615px;" id="elwat2ghor5oj"
+                        class="animable"></rect>
+                    <rect x="322.53" y="401.21" width="8.69" height="0.25"
+                        style="fill: rgb(235, 235, 235); transform-origin: 326.875px 401.335px;" id="el5g9wbv7vvxv"
+                        class="animable"></rect>
+                    <rect x="396.59" y="389.21" width="19.19" height="0.25"
+                        style="fill: rgb(235, 235, 235); transform-origin: 406.185px 389.335px;" id="ellgvom1vvaq"
+                        class="animable"></rect>
+                    <rect x="52.46" y="390.89" width="43.19" height="0.25"
+                        style="fill: rgb(235, 235, 235); transform-origin: 74.055px 391.015px;" id="elk46u09ln4a"
+                        class="animable"></rect>
+                    <rect x="104.56" y="390.89" width="6.33" height="0.25"
+                        style="fill: rgb(235, 235, 235); transform-origin: 107.725px 391.015px;" id="els9u6ks4vkr"
+                        class="animable"></rect>
+                    <rect x="131.47" y="395.11" width="93.68" height="0.25"
+                        style="fill: rgb(235, 235, 235); transform-origin: 178.31px 395.235px;" id="el62owcplbjeh"
+                        class="animable"></rect>
+                    <path
+                        d="M237,337.8H43.91a5.71,5.71,0,0,1-5.7-5.71V60.66A5.71,5.71,0,0,1,43.91,55H237a5.71,5.71,0,0,1,5.71,5.71V332.09A5.71,5.71,0,0,1,237,337.8ZM43.91,55.2a5.46,5.46,0,0,0-5.45,5.46V332.09a5.46,5.46,0,0,0,5.45,5.46H237a5.47,5.47,0,0,0,5.46-5.46V60.66A5.47,5.47,0,0,0,237,55.2Z"
+                        style="fill: rgb(235, 235, 235); transform-origin: 140.46px 196.4px;" id="elnzafr2vqdr"
+                        class="animable"></path>
+                    <path
+                        d="M453.31,337.8H260.21a5.72,5.72,0,0,1-5.71-5.71V60.66A5.72,5.72,0,0,1,260.21,55h193.1A5.71,5.71,0,0,1,459,60.66V332.09A5.71,5.71,0,0,1,453.31,337.8ZM260.21,55.2a5.47,5.47,0,0,0-5.46,5.46V332.09a5.47,5.47,0,0,0,5.46,5.46h193.1a5.47,5.47,0,0,0,5.46-5.46V60.66a5.47,5.47,0,0,0-5.46-5.46Z"
+                        style="fill: rgb(235, 235, 235); transform-origin: 356.75px 196.4px;" id="elxej1usxcr1"
+                        class="animable"></path>
+                    <g id="el9qluakhggl8">
+                        <rect x="74.55" y="79.78" width="155.62" height="171.1"
+                            style="fill: rgb(230, 230, 230); transform-origin: 152.36px 165.33px; transform: rotate(180deg);"
+                            class="animable" id="eleyd52xdteyt"></rect>
+                    </g>
+                    <g id="el5kyvvh0qco">
+                        <rect x="69.47" y="79.78" width="158.33" height="171.1"
+                            style="fill: rgb(240, 240, 240); transform-origin: 148.635px 165.33px; transform: rotate(180deg);"
+                            class="animable" id="el7jqkyr8f66d"></rect>
+                    </g>
+                    <polygon points="74.55 250.87 230.17 250.87 230.17 258.33 69.58 258.33 74.55 250.87"
+                        style="fill: rgb(230, 230, 230); transform-origin: 149.875px 254.6px;" id="elergonvd8ayd"
+                        class="animable"></polygon>
+                    <polygon points="61.01 250.87 219.33 250.87 214.36 258.33 56.03 258.33 61.01 250.87"
+                        style="fill: rgb(240, 240, 240); transform-origin: 137.68px 254.6px;" id="elk4gt4guq6o"
+                        class="animable"></polygon>
+                    <g id="eltssps26wudk">
+                        <rect x="70.19" y="93.27" width="156.88" height="144.11"
+                            style="fill: rgb(250, 250, 250); transform-origin: 148.63px 165.325px; transform: rotate(90deg);"
+                            class="animable" id="el93i3y0nj7p"></rect>
+                    </g>
+                    <polygon points="196.41 243.76 140.75 86.89 121.05 86.89 176.71 243.76 196.41 243.76"
+                        style="fill: rgb(255, 255, 255); transform-origin: 158.73px 165.325px;" id="elorp7epcylh"
+                        class="animable"></polygon>
+                    <path
+                        d="M217.39,238.78a.55.55,0,0,0,.55-.55V91.51a.55.55,0,0,0-.55-.54.54.54,0,0,0-.54.54V238.23A.55.55,0,0,0,217.39,238.78Z"
+                        style="fill: rgb(240, 240, 240); transform-origin: 217.395px 164.875px;" id="el3wdpaj06y0w"
+                        class="animable"></path>
+                    <polygon points="154.48 243.76 98.82 86.89 91.14 86.89 146.8 243.76 154.48 243.76"
+                        style="fill: rgb(255, 255, 255); transform-origin: 122.81px 165.325px;" id="elru6reuthkhp"
+                        class="animable"></polygon>
+                    <g id="elzzkazlrxe9f">
+                        <rect x="-1.41" y="164.87" width="156.88" height="0.9"
+                            style="fill: rgb(230, 230, 230); transform-origin: 77.03px 165.32px; transform: rotate(90deg);"
+                            class="animable" id="el8u5gidk4mld"></rect>
+                    </g>
+                    <g id="ely0uyz09k85b">
+                        <polygon points="67.78 100.61 223.41 100.61 224.06 89.65 68.44 89.65 67.78 100.61"
+                            style="fill: rgb(224, 224, 224); opacity: 0.5; transform-origin: 145.92px 95.13px;"
+                            class="animable" id="elkj4rlfshok"></polygon>
+                    </g>
+                    <g id="elokgnkianzjf">
+                        <polygon points="67.78 118.62 223.41 118.62 224.06 107.66 68.44 107.66 67.78 118.62"
+                            style="fill: rgb(224, 224, 224); opacity: 0.5; transform-origin: 145.92px 113.14px;"
+                            class="animable" id="elupd98nz94o"></polygon>
+                    </g>
+                    <g id="elbnvfjub5gcp">
+                        <polygon points="67.78 136.63 223.41 136.63 224.06 125.68 68.44 125.68 67.78 136.63"
+                            style="fill: rgb(224, 224, 224); opacity: 0.5; transform-origin: 145.92px 131.155px;"
+                            class="animable" id="eljqnojigg6f"></polygon>
+                    </g>
+                    <g id="el3oehpso6vy3">
+                        <polygon points="67.78 154.64 223.41 154.64 224.06 143.69 68.44 143.69 67.78 154.64"
+                            style="fill: rgb(224, 224, 224); opacity: 0.5; transform-origin: 145.92px 149.165px;"
+                            class="animable" id="el24wk2zevili"></polygon>
+                    </g>
+                    <g id="el5sxpa8a5sw8">
+                        <polygon points="67.78 172.66 223.41 172.66 224.06 161.7 68.44 161.7 67.78 172.66"
+                            style="fill: rgb(224, 224, 224); opacity: 0.5; transform-origin: 145.92px 167.18px;"
+                            class="animable" id="elmets6mup5qi"></polygon>
+                    </g>
+                    <g id="elhhtqhv7dkqr">
+                        <polygon points="67.78 190.67 223.41 190.67 224.06 179.71 68.44 179.71 67.78 190.67"
+                            style="fill: rgb(224, 224, 224); opacity: 0.5; transform-origin: 145.92px 185.19px;"
+                            class="animable" id="elpp6v7hbjwmp"></polygon>
+                    </g>
+                    <rect x="301.37" y="103" width="123.31" height="55.25"
+                        style="fill: rgb(245, 245, 245); transform-origin: 363.025px 130.625px;" id="elmispcukmxoa"
+                        class="animable"></rect>
+                    <rect x="301.37" y="103" width="123.31" height="1.94"
+                        style="fill: rgb(224, 224, 224); transform-origin: 363.025px 103.97px;" id="elgw9i8txae8h"
+                        class="animable"></rect>
+                    <rect x="301.37" y="156.31" width="123.31" height="1.94"
+                        style="fill: rgb(224, 224, 224); transform-origin: 363.025px 157.28px;" id="el9m36eqb78jl"
+                        class="animable"></rect>
+                    <polygon points="361.09 382.4 359.36 158.25 366.69 158.25 364.96 382.4 361.09 382.4"
+                        style="fill: rgb(235, 235, 235); transform-origin: 363.025px 270.325px;" id="el2gc5k6sl9p"
+                        class="animable"></polygon>
+                    <polygon points="308.64 382.4 374.47 158.25 381.81 158.25 312.51 382.4 308.64 382.4"
+                        style="fill: rgb(235, 235, 235); transform-origin: 345.225px 270.325px;" id="eljiul5erdtjk"
+                        class="animable"></polygon>
+                    <polygon points="417.42 382.4 351.59 158.25 344.25 158.25 413.55 382.4 417.42 382.4"
+                        style="fill: rgb(235, 235, 235); transform-origin: 380.835px 270.325px;" id="el5yz5dj9rkib"
+                        class="animable"></polygon>
+                    <g id="elvqv77mfon7">
+                        <rect x="81.23" y="292.44" width="7.09" height="93.78"
+                            style="fill: rgb(230, 230, 230); transform-origin: 84.775px 339.33px; transform: rotate(180deg);"
+                            class="animable" id="elxu8maz4tya8"></rect>
+                    </g>
+                    <g id="eltwt7molgf7">
+                        <rect x="78.99" y="292.44" width="4.93" height="93.78"
+                            style="fill: rgb(240, 240, 240); transform-origin: 81.455px 339.33px; transform: rotate(180deg);"
+                            class="animable" id="elfdo3y5ahqvo"></rect>
+                    </g>
+                    <rect x="77.38" y="288.08" width="156.83" height="13.07"
+                        style="fill: rgb(240, 240, 240); transform-origin: 155.795px 294.615px;" id="elsmdnqfcr9xa"
+                        class="animable"></rect>
+                    <g id="elsunxer2aeec">
+                        <rect x="230.17" y="301.16" width="7.09" height="80.71"
+                            style="fill: rgb(230, 230, 230); transform-origin: 233.715px 341.515px; transform: rotate(180deg);"
+                            class="animable" id="elgdt3bkwyd9m"></rect>
+                    </g>
+                    <g id="eli49rcjb9wb">
+                        <rect x="227.93" y="301.16" width="4.93" height="80.71"
+                            style="fill: rgb(240, 240, 240); transform-origin: 230.395px 341.515px; transform: rotate(180deg);"
+                            class="animable" id="eluvlfeh4cao8"></rect>
+                    </g>
+                    <g id="elx1j2p79x039">
+                        <rect x="280.66" y="301.16" width="7.09" height="80.71"
+                            style="fill: rgb(230, 230, 230); transform-origin: 284.205px 341.515px; transform: rotate(180deg);"
+                            class="animable" id="elvzrq8go51tl"></rect>
+                    </g>
+                    <g id="elunkbg9nmz">
+                        <rect x="278.42" y="301.16" width="4.93" height="80.71"
+                            style="fill: rgb(240, 240, 240); transform-origin: 280.885px 341.515px; transform: rotate(180deg);"
+                            class="animable" id="elgivsf1rfqkl"></rect>
+                    </g>
+                    <g id="el5h49r1c1goj">
+                        <rect x="126.11" y="301.16" width="7.09" height="80.71"
+                            style="fill: rgb(230, 230, 230); transform-origin: 129.655px 341.515px; transform: rotate(180deg);"
+                            class="animable" id="elfcgdc24hvi"></rect>
+                    </g>
+                    <g id="elsiwni1j6coa">
+                        <rect x="123.88" y="301.16" width="4.93" height="80.71"
+                            style="fill: rgb(240, 240, 240); transform-origin: 126.345px 341.515px; transform: rotate(180deg);"
+                            class="animable" id="eleh25qvxbw05"></rect>
+                    </g>
+                    <g id="elz55845v0o2">
+                        <rect x="234.21" y="288.08" width="55.16" height="13.07"
+                            style="fill: rgb(230, 230, 230); transform-origin: 261.79px 294.615px; transform: rotate(180deg);"
+                            class="animable" id="elrbtq8rq99s8"></rect>
+                    </g>
+                    <rect x="133.21" y="278.32" width="67.97" height="9.76"
+                        style="fill: rgb(235, 235, 235); transform-origin: 167.195px 283.2px;" id="ela8cg49d7b1"
+                        class="animable"></rect>
+                    <g id="el6l9oqxcvmbw">
+                        <rect x="201.18" y="278.32" width="33.28" height="9.76"
+                            style="fill: rgb(224, 224, 224); transform-origin: 217.82px 283.2px; transform: rotate(180deg);"
+                            class="animable" id="el6j5eu1bfohd"></rect>
+                    </g>
+                    <g id="elq2dd7v2umhh">
+                        <rect x="208.4" y="280.44" width="18.84" height="2.76" rx="1.38"
+                            style="fill: rgb(245, 245, 245); transform-origin: 217.82px 281.82px; transform: rotate(-180deg);"
+                            class="animable" id="el3qhgkmzx9ew"></rect>
+                    </g>
+                    <rect x="155.96" y="271.31" width="13.69" height="7.01"
+                        style="fill: rgb(245, 245, 245); transform-origin: 162.805px 274.815px;" id="elwkbep2lw2sc"
+                        class="animable"></rect>
+                    <rect x="162.31" y="268.38" width="0.99" height="2.93"
+                        style="fill: rgb(230, 230, 230); transform-origin: 162.805px 269.845px;" id="elsiw1clg7z38"
+                        class="animable"></rect>
+                    <rect x="180.87" y="272.53" width="0.99" height="1.46"
+                        style="fill: rgb(230, 230, 230); transform-origin: 181.365px 273.26px;" id="elc5d100mhpdq"
+                        class="animable"></rect>
+                    <rect x="173.03" y="273.99" width="16.67" height="4.33"
+                        style="fill: rgb(240, 240, 240); transform-origin: 181.365px 276.155px;" id="elv2tlv64kxwp"
+                        class="animable"></rect>
+                </g>
+                <g id="freepik--Shadow--inject-2" class="animable" style="transform-origin: 250px 416.24px;">
+                    <ellipse id="freepik--path--inject-2" cx="250" cy="416.24" rx="193.89" ry="11.32"
+                        style="fill: rgb(245, 245, 245); transform-origin: 250px 416.24px;" class="animable"></ellipse>
+                </g>
+                <g id="freepik--weather-widget--inject-2" class="animable"
+                    style="transform-origin: 237.411px 161.551px;">
+                    <rect x="221.68" y="91.54" width="7" height="1"
+                        style="fill: #9596BD; transform-origin: 225.18px 92.04px;" id="el5070j085qvx" class="animable">
+                    </rect>
+                    <rect x="181.19" y="91.54" width="34.03" height="1"
+                        style="fill: #9596BD; transform-origin: 198.205px 92.04px;" id="ellj7jmkgltw" class="animable">
+                    </rect>
+                    <path
+                        d="M401.46,231.56H87.1a12.9,12.9,0,0,1-12.52-11.38L63.13,106.42A10.14,10.14,0,0,1,73.36,95H387.72a12.92,12.92,0,0,1,12.53,11.38l11.44,113.76A10.13,10.13,0,0,1,401.46,231.56Z"
+                        style="fill: #9596BD; transform-origin: 237.411px 163.28px;" id="elomgvzs84ffg"
+                        class="animable"></path>
+                    <g id="elxbrridq72gd">
+                        <path
+                            d="M132.11,223H94.3a12.27,12.27,0,0,1-11.89-10.8l-9.84-97.85a9.61,9.61,0,0,1,9.71-10.8h37.81A12.25,12.25,0,0,1,132,114.38l9.85,97.85A9.61,9.61,0,0,1,132.11,223Z"
+                            style="fill: rgb(255, 255, 255); opacity: 0.3; transform-origin: 107.208px 163.275px;"
+                            class="animable" id="elsqaguh1buik"></path>
+                    </g>
+                    <path
+                        d="M198.21,227H158.32a12.93,12.93,0,0,1-12.54-11.4L135.25,111A10.14,10.14,0,0,1,145.5,99.57h39.89A12.92,12.92,0,0,1,197.93,111l10.53,104.68A10.15,10.15,0,0,1,198.21,227Z"
+                        style="fill: rgb(255, 255, 255); transform-origin: 171.848px 163.285px;" id="elf6o5bcx0oxj"
+                        class="animable"></path>
+                    <g id="elvmrrut6kkdp">
+                        <path
+                            d="M261.43,223H223.62a12.25,12.25,0,0,1-11.88-10.8l-9.85-97.85a9.61,9.61,0,0,1,9.71-10.8h37.81a12.27,12.27,0,0,1,11.89,10.8l9.84,97.85A9.61,9.61,0,0,1,261.43,223Z"
+                            style="fill: rgb(255, 255, 255); opacity: 0.3; transform-origin: 236.515px 163.275px;"
+                            class="animable" id="elupa9mx0uhrj"></path>
+                    </g>
+                    <g id="elm8g7uvljm3j">
+                        <path
+                            d="M326.09,223H288.28a12.26,12.26,0,0,1-11.88-10.8l-9.85-97.85a9.63,9.63,0,0,1,9.72-10.8h37.8A12.27,12.27,0,0,1,326,114.38l9.84,97.85A9.61,9.61,0,0,1,326.09,223Z"
+                            style="fill: rgb(255, 255, 255); opacity: 0.2; transform-origin: 301.195px 163.275px;"
+                            class="animable" id="el3b5p6f4k7sq"></path>
+                    </g>
+                    <g id="elc2r4xbl70x">
+                        <path
+                            d="M390.75,223H352.94a12.26,12.26,0,0,1-11.88-10.8l-9.85-97.85a9.63,9.63,0,0,1,9.72-10.8h37.8a12.27,12.27,0,0,1,11.89,10.8l9.84,97.85A9.61,9.61,0,0,1,390.75,223Z"
+                            style="fill: rgb(255, 255, 255); opacity: 0.1; transform-origin: 365.836px 163.275px;"
+                            class="animable" id="elaonjd40t4b8"></path>
+                    </g>
+                    <path
+                        d="M245.22,135.62a6.28,6.28,0,0,0-6.11-5.51,5.18,5.18,0,0,0-2,.4,7.6,7.6,0,0,0-6.42-3.77,5.93,5.93,0,0,0-6,5.26,5.11,5.11,0,0,0-4.82,5.76,6.54,6.54,0,0,0,6.36,5.78h18.38a3.65,3.65,0,0,0,3.69-4.1A4.65,4.65,0,0,0,245.22,135.62Z"
+                        style="fill: rgb(255, 255, 255); transform-origin: 234.078px 135.14px;" id="elwjp4c70kfeh"
+                        class="animable"></path>
+                    <path
+                        d="M181.51,125.88a7.34,7.34,0,0,0-7.13-6.43,6.16,6.16,0,0,0-2.38.47,8.88,8.88,0,0,0-7.49-4.4,6.93,6.93,0,0,0-7,6.14,6,6,0,0,0-5.63,6.73,7.63,7.63,0,0,0,7.43,6.75h21.47a4.26,4.26,0,0,0,4.31-4.78A5.47,5.47,0,0,0,181.51,125.88Z"
+                        style="fill: #9596BD; transform-origin: 168.478px 125.33px;" id="el6g4u1i2o29t"
+                        class="animable"></path>
+                    <path
+                        d="M162.55,145.55a.9.9,0,0,1-.6-.23.89.89,0,0,1-.07-1.26l5.58-6.2a.89.89,0,0,1,1.32,1.19l-5.57,6.2A.88.88,0,0,1,162.55,145.55Z"
+                        style="fill: #9596BD; transform-origin: 165.314px 141.576px;" id="elpuu0q2rawum"
+                        class="animable"></path>
+                    <path
+                        d="M168.87,145.55a.9.9,0,0,1-.6-.23.89.89,0,0,1-.07-1.26l5.58-6.2a.89.89,0,0,1,1.32,1.19l-5.57,6.2A.88.88,0,0,1,168.87,145.55Z"
+                        style="fill: #9596BD; transform-origin: 171.634px 141.576px;" id="elumnp1fjz9id"
+                        class="animable"></path>
+                    <path
+                        d="M156.23,145.55a.9.9,0,0,1-.6-.23.89.89,0,0,1-.07-1.26l5.58-6.2a.89.89,0,0,1,1.32,1.19l-5.57,6.2A.88.88,0,0,1,156.23,145.55Z"
+                        style="fill: #9596BD; transform-origin: 158.994px 141.576px;" id="el7z39wi5j744"
+                        class="animable"></path>
+                    <g id="elyxkphqh976">
+                        <g style="opacity: 0.4; transform-origin: 362.893px 134.896px;" class="animable"
+                            id="ely71rlgwervs">
+                            <path
+                                d="M372.55,131.45a5.43,5.43,0,0,0-5.27-4.75,4.56,4.56,0,0,0-1.76.34,6.56,6.56,0,0,0-5.53-3.25,5.12,5.12,0,0,0-5.2,4.54,4.42,4.42,0,0,0-4.16,5,5.65,5.65,0,0,0,5.49,5H372a3.13,3.13,0,0,0,3.17-3.53A4,4,0,0,0,372.55,131.45Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 362.893px 131.06px;"
+                                id="elz7hgd4530vf" class="animable"></path>
+                            <path
+                                d="M358.54,146a.63.63,0,0,1-.44-.17.66.66,0,0,1-.05-.93l4-4.4a.66.66,0,1,1,1,.88l-4,4.4A.64.64,0,0,1,358.54,146Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 360.549px 143.137px;"
+                                id="elqj0kq0umw2n" class="animable"></path>
+                            <path
+                                d="M363.21,146a.61.61,0,0,1-.44-.17.65.65,0,0,1,0-.93l4-4.4a.66.66,0,1,1,1,.88l-4,4.4A.64.64,0,0,1,363.21,146Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 365.255px 143.139px;"
+                                id="el1ur089wvwu4" class="animable"></path>
+                            <path
+                                d="M353.87,146a.64.64,0,0,1-.44-.17.66.66,0,0,1-.05-.93l4-4.4a.66.66,0,0,1,.93-.05.65.65,0,0,1,.05.93l-4,4.4A.64.64,0,0,1,353.87,146Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 355.872px 143.141px;"
+                                id="el6bl3e3vyt2k" class="animable"></path>
+                        </g>
+                    </g>
+                    <g id="el5nm319qln3a">
+                        <g style="opacity: 0.7; transform-origin: 298.5px 136.294px;" class="animable"
+                            id="elnbiudls6u6">
+                            <path
+                                d="M303.52,136.29a4.5,4.5,0,0,1-4.55,5.07,5.73,5.73,0,0,1-5.57-5.07,4.49,4.49,0,0,1,4.55-5.06A5.73,5.73,0,0,1,303.52,136.29Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 298.46px 136.295px;"
+                                id="elahm68e4zw6" class="animable"></path>
+                            <path
+                                d="M299.45,146.55a.43.43,0,0,1-.43-.39l-.24-2.31a.44.44,0,0,1,.39-.48.44.44,0,0,1,.48.39l.23,2.31a.43.43,0,0,1-.39.47Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 299.33px 144.959px;"
+                                id="eldizafnomgsu" class="animable"></path>
+                            <path
+                                d="M297.7,129.22a.44.44,0,0,1-.43-.4l-.23-2.3a.44.44,0,0,1,.39-.48.43.43,0,0,1,.47.39l.24,2.31a.43.43,0,0,1-.39.47Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 297.59px 127.629px;"
+                                id="elp96b34ncaao" class="animable"></path>
+                            <path
+                                d="M291,136.73h-2.31a.44.44,0,0,1-.43-.44.43.43,0,0,1,.43-.43H291a.43.43,0,0,1,.43.43A.44.44,0,0,1,291,136.73Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 289.845px 136.295px;"
+                                id="elezl42nc3ixf" class="animable"></path>
+                            <path
+                                d="M308.28,136.73H306a.44.44,0,0,1-.43-.44.43.43,0,0,1,.43-.43h2.31a.43.43,0,0,1,.43.43A.44.44,0,0,1,308.28,136.73Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 307.155px 136.295px;"
+                                id="elfxnj2270vrk" class="animable"></path>
+                            <path
+                                d="M306.1,143.67a.46.46,0,0,1-.29-.11l-1.8-1.63a.44.44,0,0,1,.59-.65l1.79,1.63a.44.44,0,0,1,0,.62A.43.43,0,0,1,306.1,143.67Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 305.203px 142.428px;"
+                                id="el6ydtfcq62ib" class="animable"></path>
+                            <path
+                                d="M292.61,131.42a.44.44,0,0,1-.29-.12l-1.79-1.63a.43.43,0,1,1,.58-.64l1.8,1.63a.44.44,0,0,1-.3.76Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 291.718px 130.169px;"
+                                id="eljci6giggnkf" class="animable"></path>
+                            <path
+                                d="M292.22,143.67a.44.44,0,0,1-.29-.11.43.43,0,0,1,0-.61l1.47-1.63a.43.43,0,0,1,.61,0,.44.44,0,0,1,0,.62l-1.47,1.63A.45.45,0,0,1,292.22,143.67Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 292.97px 142.432px;"
+                                id="elug8dgwoyle" class="animable"></path>
+                            <path
+                                d="M303.24,131.42a.4.4,0,0,1-.29-.12.43.43,0,0,1,0-.61l1.47-1.63a.44.44,0,0,1,.65.58l-1.47,1.63A.42.42,0,0,1,303.24,131.42Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 303.983px 130.189px;"
+                                id="elyxvhlq511m" class="animable"></path>
+                        </g>
+                    </g>
+                    <path
+                        d="M114.29,135a5.35,5.35,0,0,0-5.2-4.69,4.45,4.45,0,0,0-1.73.35,6.46,6.46,0,0,0-5.46-3.21,5,5,0,0,0-5.13,4.47,4.37,4.37,0,0,0-4.11,4.91,5.57,5.57,0,0,0,5.42,4.92h15.65a3.1,3.1,0,0,0,3.14-3.49A4,4,0,0,0,114.29,135Z"
+                        style="fill: rgb(255, 255, 255); transform-origin: 104.76px 134.599px;" id="elslabpzjdrjl"
+                        class="animable"></path>
+                    <path
+                        d="M98.7,126.61a6.22,6.22,0,0,0-3.24,3.91,5.47,5.47,0,0,0-2.76,1.59A4.72,4.72,0,0,1,91,129a3.83,3.83,0,0,1,3.88-4.31A4.82,4.82,0,0,1,98.7,126.61Z"
+                        style="fill: rgb(255, 255, 255); transform-origin: 94.8348px 128.4px;" id="ele3s4b108us"
+                        class="animable"></path>
+                    <path
+                        d="M94.7,123a.37.37,0,0,1-.37-.33l-.19-2a.36.36,0,0,1,.33-.4.36.36,0,0,1,.4.33l.2,2a.37.37,0,0,1-.33.41Z"
+                        style="fill: rgb(255, 255, 255); transform-origin: 94.605px 121.639px;" id="el3i0tye263kx"
+                        class="animable"></path>
+                    <path
+                        d="M89,129.36H87a.37.37,0,0,1-.37-.37.36.36,0,0,1,.37-.37h2a.37.37,0,0,1,.37.37A.38.38,0,0,1,89,129.36Z"
+                        style="fill: rgb(255, 255, 255); transform-origin: 87.9999px 128.99px;" id="elctu0wn8zd5l"
+                        class="animable"></path>
+                    <path
+                        d="M90.37,124.83a.38.38,0,0,1-.25-.09l-1.53-1.39a.37.37,0,0,1,.5-.55l1.53,1.39a.37.37,0,0,1,0,.52A.36.36,0,0,1,90.37,124.83Z"
+                        style="fill: rgb(255, 255, 255); transform-origin: 89.5975px 123.767px;" id="elot5j4zfc03i"
+                        class="animable"></path>
+                    <path
+                        d="M90,135.27a.35.35,0,0,1-.25-.1.37.37,0,0,1,0-.52L91,133.26a.39.39,0,0,1,.53,0,.38.38,0,0,1,0,.53l-1.25,1.39A.36.36,0,0,1,90,135.27Z"
+                        style="fill: rgb(255, 255, 255); transform-origin: 90.6404px 134.214px;" id="el6img3ycmzib"
+                        class="animable"></path>
+                    <path
+                        d="M99.41,124.83a.36.36,0,0,1-.27-.61l1.25-1.39a.37.37,0,0,1,.52,0,.38.38,0,0,1,0,.52l-1.25,1.39A.39.39,0,0,1,99.41,124.83Z"
+                        style="fill: rgb(255, 255, 255); transform-origin: 100.026px 123.777px;" id="el9nbl9ejig3g"
+                        class="animable"></path>
+                    <path
+                        d="M130.54,202.71H91.78a2.15,2.15,0,0,1-2.08-1.89l-.39-3.89a1.68,1.68,0,0,1,1.7-1.88h38.76a2.14,2.14,0,0,1,2.07,1.88l.39,3.89A1.68,1.68,0,0,1,130.54,202.71Z"
+                        style="fill: rgb(255, 255, 255); transform-origin: 110.771px 198.88px;" id="elzgbr5s3l1cd"
+                        class="animable"></path>
+                    <path
+                        d="M197.26,204.42H154.72a2.35,2.35,0,0,1-2.28-2.07l-.43-4.27a1.84,1.84,0,0,1,1.86-2.07h42.55a2.35,2.35,0,0,1,2.28,2.07l.43,4.27A1.85,1.85,0,0,1,197.26,204.42Z"
+                        style="fill: #9596BD; transform-origin: 175.569px 200.215px;" id="elg9ik81okal"
+                        class="animable"></path>
+                    <path
+                        d="M259.86,202.71H221.1a2.14,2.14,0,0,1-2.07-1.89l-.39-3.89a1.67,1.67,0,0,1,1.69-1.88h38.76a2.13,2.13,0,0,1,2.07,1.88l.4,3.89A1.69,1.69,0,0,1,259.86,202.71Z"
+                        style="fill: rgb(255, 255, 255); transform-origin: 240.099px 198.88px;" id="elp8rmf1qkhs"
+                        class="animable"></path>
+                    <g id="elnocgs3d5yx">
+                        <path
+                            d="M324.52,202.71H285.76a2.14,2.14,0,0,1-2.07-1.89l-.39-3.89a1.67,1.67,0,0,1,1.69-1.88h38.76a2.13,2.13,0,0,1,2.07,1.88l.4,3.89A1.69,1.69,0,0,1,324.52,202.71Z"
+                            style="fill: rgb(255, 255, 255); opacity: 0.7; transform-origin: 304.759px 198.88px;"
+                            class="animable" id="el4tdqq7rqv8q"></path>
+                    </g>
+                    <g id="elr7rt4qujul">
+                        <path
+                            d="M389.18,202.71H350.43a2.14,2.14,0,0,1-2.08-1.89l-.39-3.89a1.67,1.67,0,0,1,1.69-1.88h38.76a2.15,2.15,0,0,1,2.08,1.88l.39,3.89A1.69,1.69,0,0,1,389.18,202.71Z"
+                            style="fill: rgb(255, 255, 255); opacity: 0.4; transform-origin: 369.419px 198.88px;"
+                            class="animable" id="elhtzu7uamu8"></path>
+                    </g>
+                </g>
+                <g id="freepik--Character--inject-2" class="animable animator-active"
+                    style="transform-origin: 283.738px 267.2px;">
+                    <path
+                        d="M368,167.63c2.8,4.65,5.33,9.29,7.74,14.1a148.33,148.33,0,0,1,6.51,14.92c.24.65.47,1.31.68,2l.33,1,.17.5.12.4c0,.17.09.34.13.51a11.74,11.74,0,0,1-.56,6.44,28.77,28.77,0,0,1-4.65,8A68.62,68.62,0,0,1,366.68,227l-3.77-3.9a123.22,123.22,0,0,0,8.58-12.43,32.83,32.83,0,0,0,1.6-3.11,14.62,14.62,0,0,0,1-2.84c.19-.82.1-1.47,0-1.33v0l0-.07-.18-.42-.34-.85c-.23-.56-.47-1.13-.73-1.7-2-4.55-4.36-9.12-6.78-13.65s-5-9.09-7.46-13.52Z"
+                        style="fill: rgb(255, 139, 123); transform-origin: 371.248px 197.315px;" id="el046klg6kij4v"
+                        class="animable"></path>
+                    <path d="M364.34,221.35l-5.69,5,7.92,5s2.33-3.78,2.23-7.28Z"
+                        style="fill: rgb(255, 139, 123); transform-origin: 363.727px 226.35px;" id="elk4mrvl3ew6s"
+                        class="animable"></path>
+                    <polygon points="356.57 233.83 362.63 237.73 366.57 231.38 358.65 226.38 356.57 233.83"
+                        style="fill: rgb(255, 139, 123); transform-origin: 361.57px 232.055px;" id="elllfvfaq81x"
+                        class="animable"></polygon>
+                    <path
+                        d="M334.69,135.09c-.11.57-.51,1-.88.91s-.59-.6-.48-1.17.51-1,.88-.91S334.8,134.52,334.69,135.09Z"
+                        style="fill: rgb(38, 50, 56); transform-origin: 334.01px 134.96px;" id="elil6go8jxg1p"
+                        class="animable"></path>
+                    <path d="M334.24,136.08a20.58,20.58,0,0,1-3.69,4.36,3.35,3.35,0,0,0,2.64,1.05Z"
+                        style="fill: rgb(255, 86, 82); transform-origin: 332.395px 138.788px;" id="elo5f677har7"
+                        class="animable"></path>
+                    <path
+                        d="M337.4,132.32a.33.33,0,0,0,.23-.09.35.35,0,0,0,0-.49,3.36,3.36,0,0,0-2.93-1.1.33.33,0,0,0-.27.39.34.34,0,0,0,.39.28h0a2.72,2.72,0,0,1,2.31.9A.36.36,0,0,0,337.4,132.32Z"
+                        style="fill: rgb(38, 50, 56); transform-origin: 336.077px 131.467px;" id="elknu4mvp964"
+                        class="animable"></path>
+                    <path
+                        d="M348.4,142c-1,5.29-2.07,15,1.63,18.51,0,0-1.45,5.36-11.27,5.36-10.81,0-4.75-4.54-4.75-4.54,4.58-4,5.73-8.14,4.71-12.24Z"
+                        style="fill: rgb(255, 139, 123); transform-origin: 341.173px 153.935px;" id="elegfl7fjtnhh"
+                        class="animable"></path>
+                    <path d="M351.24,162.11c.55-2,1.15-4.26-.59-4.79-1.91-.58-12.07-.4-15.42,1.35s-2,5.55-2,5.55Z"
+                        style="fill: rgb(38, 50, 56); transform-origin: 342.382px 160.622px;" id="elm2zkjeaatje"
+                        class="animable"></path>
+                    <path
+                        d="M386.32,405.69a2.31,2.31,0,0,1-1.8-.1.71.71,0,0,1-.16-.8.78.78,0,0,1,.44-.5c1-.47,3.22.45,3.31.49a.17.17,0,0,1,0,.31A8.87,8.87,0,0,1,386.32,405.69Zm-1.18-1.16-.2.07a.47.47,0,0,0-.26.29c-.09.31,0,.41.06.44.39.33,1.84,0,2.85-.38A5.52,5.52,0,0,0,385.14,404.53Z"
+                        style="fill: #9596BD; transform-origin: 386.255px 404.992px;" id="elml20jdqtq4o"
+                        class="animable"></path>
+                    <path
+                        d="M388.08,405.1H388c-.82-.24-2.57-1.48-2.59-2.3a.56.56,0,0,1,.44-.55.92.92,0,0,1,.76.06c1,.49,1.57,2.49,1.6,2.58a.16.16,0,0,1-.13.21Zm-2-2.55-.08,0c-.21.07-.21.18-.21.22,0,.49,1.17,1.46,2,1.86a4.21,4.21,0,0,0-1.32-2A.6.6,0,0,0,386,402.55Z"
+                        style="fill: #9596BD; transform-origin: 386.814px 403.647px;" id="elah5azaznv7l"
+                        class="animable"></path>
+                    <path
+                        d="M333,409.23c-.93,0-1.82-.13-2.12-.55a.63.63,0,0,1,0-.74.83.83,0,0,1,.54-.4c1.21-.33,3.73,1.11,3.84,1.17a.18.18,0,0,1,.08.18.17.17,0,0,1-.13.14A13,13,0,0,1,333,409.23Zm-1.15-1.4a1.15,1.15,0,0,0-.33,0,.47.47,0,0,0-.33.24c-.12.21-.08.31,0,.37.34.47,2.17.48,3.51.29A7.78,7.78,0,0,0,331.88,407.83Z"
+                        style="fill: #9596BD; transform-origin: 333.051px 408.36px;" id="el60vsrvy4iuf"
+                        class="animable"></path>
+                    <path
+                        d="M335.21,409l-.07,0c-.87-.39-2.6-1.95-2.47-2.77,0-.19.17-.43.64-.48a1.28,1.28,0,0,1,.95.3,4.8,4.8,0,0,1,1.12,2.78.17.17,0,0,1-.07.16A.17.17,0,0,1,335.21,409Zm-1.76-2.93h-.1c-.31,0-.33.16-.34.2-.08.49,1.1,1.72,2,2.25a4,4,0,0,0-1-2.23A.88.88,0,0,0,333.45,406.1Z"
+                        style="fill: #9596BD; transform-origin: 334.022px 407.374px;" id="elwdv4a64h7r"
+                        class="animable"></path>
+                    <polygon points="343.16 408.86 335.93 408.86 335.21 392.12 342.44 392.12 343.16 408.86"
+                        style="fill: rgb(255, 139, 123); transform-origin: 339.185px 400.49px;" id="eln0b691z4xu"
+                        class="animable"></polygon>
+                    <polygon points="396.14 403.18 389.07 404.71 381.98 389.12 389.05 387.59 396.14 403.18"
+                        style="fill: rgb(255, 139, 123); transform-origin: 389.06px 396.15px;" id="eldqi625s956r"
+                        class="animable"></polygon>
+                    <path
+                        d="M388.4,404l7.93-1.71a.63.63,0,0,1,.71.35l2.75,6a1.06,1.06,0,0,1-.76,1.48c-2.78.55-4.16.68-7.65,1.43-2.15.47-7,1.65-10,2.29s-4-2.21-2.83-2.73c5.18-2.37,7.35-4.46,8.75-6.4A1.82,1.82,0,0,1,388.4,404Z"
+                        style="fill: rgb(38, 50, 56); transform-origin: 388.98px 408.104px;" id="elcmpkdudtwhb"
+                        class="animable"></path>
+                    <path
+                        d="M336,408h7.89a.63.63,0,0,1,.62.49l1.43,6.43a1.05,1.05,0,0,1-1,1.29c-2.85-.05-7-.22-10.54-.22-4.19,0-4.12.23-9,.23-3,0-3.79-3-2.55-3.27,5.65-1.24,6.58-1.37,11.47-4.39A3.41,3.41,0,0,1,336,408Z"
+                        style="fill: rgb(38, 50, 56); transform-origin: 334.127px 412.11px;" id="elfodhfho7wtu"
+                        class="animable"></path>
+                    <path
+                        d="M328.56,175.73c-2.76,5.11-5.66,10-8.77,14.84a155.13,155.13,0,0,1-10.17,14.21c-.46.58-1,1.15-1.48,1.72l-.75.87-.89.91c-.59.6-1.13,1.08-1.71,1.61l-1.68,1.46c-2.24,1.89-4.5,3.65-6.78,5.38-4.57,3.45-9.24,6.69-14.07,9.76l-3.41-4.23c3.94-4,8-8,12-11.93,2-2,4-3.92,5.88-5.87.93-1,1.87-2,2.65-2.87l.54-.65.59-.77c.39-.53.79-1,1.17-1.58,3.11-4.34,6-9.05,8.9-13.79s5.69-9.58,8.42-14.35Z"
+                        style="fill: rgb(255, 139, 123); transform-origin: 303.705px 198.47px;" id="elta6a3hjlqkb"
+                        class="animable"></path>
+                    <path
+                        d="M365.2,162.15C372,163.71,379.94,188,379.94,188l-11.59,7.58s-7.37-11.32-11.2-19.39C353.13,167.77,358.27,160.57,365.2,162.15Z"
+                        style="fill: #9596BD; transform-origin: 367.838px 178.755px;" id="elfgv8ycyl8gj"
+                        class="animable"></path>
+                    <g id="elngl0kmwmvh" class="">
+                        <g style="opacity: 0.7; transform-origin: 367.838px 178.755px;" class="animable"
+                            id="elaz1enkdujxo">
+                            <path
+                                d="M365.2,162.15C372,163.71,379.94,188,379.94,188l-11.59,7.58s-7.37-11.32-11.2-19.39C353.13,167.77,358.27,160.57,365.2,162.15Z"
+                                style="fill: rgb(255, 255, 255); transform-origin: 367.838px 178.755px;"
+                                id="eljbpz09tvia" class="animable"></path>
+                        </g>
+                    </g>
+                    <g id="els2ls7m3ticd" class="">
+                        <path
+                            d="M361.35,174.62c-.59-.77-2.2,1-3.41,3.23,1.68,3.32,3.8,7,5.68,10.14C364.79,181.92,362.88,176.57,361.35,174.62Z"
+                            style="fill: #9596BD; opacity: 0.5; transform-origin: 360.961px 181.213px;" class="animable"
+                            id="elw3e3mv60wu"></path>
+                    </g>
+                    <path
+                        d="M324.7,162.53s-7.69,8.69-.43,62.47h38.66c.27-5.93-3.46-34.88,2.27-62.85a100.45,100.45,0,0,0-12.95-1.63,140.61,140.61,0,0,0-16.43,0A72.16,72.16,0,0,0,324.7,162.53Z"
+                        style="fill: #9596BD; transform-origin: 343.176px 192.64px;" id="elxxvtetucn5" class="animable">
+                    </path>
+                    <g id="el1yi9pisprim" class="">
+                        <path
+                            d="M324.7,162.53s-7.69,8.69-.43,62.47h38.66c.27-5.93-3.46-34.88,2.27-62.85a100.45,100.45,0,0,0-12.95-1.63,140.61,140.61,0,0,0-16.43,0A72.16,72.16,0,0,0,324.7,162.53Z"
+                            style="fill: rgb(255, 255, 255); opacity: 0.7; transform-origin: 343.176px 192.64px;"
+                            class="animable" id="elccyllzclbej"></path>
+                    </g>
+                    <g id="elvbtqsw47x" class="">
+                        <path d="M321.43,177.32a156,156,0,0,0,0,19.3c4.92-3.16,9.44-11.57,9-17.13Z"
+                            style="fill: #9596BD; opacity: 0.5; transform-origin: 325.795px 186.97px;" class="animable"
+                            id="el2xyu0yc6twr"></path>
+                    </g>
+                    <polygon points="177.98 163.59 176.81 165.49 167.59 159.08 168.19 158.12 177.98 163.59"
+                        style="fill: #9596BD; transform-origin: 172.785px 161.805px;" id="elqa1hxsizra"
+                        class="animable"></polygon>
+                    <polygon points="178.29 163.1 176.5 165.98 266.96 227.85 273.97 216.53 178.29 163.1"
+                        style="fill: rgb(38, 50, 56); transform-origin: 225.235px 195.475px;" id="elrsiq7qvbmoo"
+                        class="animable"></polygon>
+                    <g id="elkzp5lxpprl" class="">
+                        <polygon points="177.96 163.64 176.84 165.44 268.26 225.74 272.66 218.64 177.96 163.64"
+                            style="fill: rgb(255, 255, 255); opacity: 0.2; transform-origin: 224.75px 194.69px;"
+                            class="animable" id="elagcz56pyuzm"></polygon>
+                    </g>
+                    <polygon points="177.58 164.24 177.21 164.84 269.73 223.37 271.19 221 177.58 164.24"
+                        style="fill: rgb(38, 50, 56); transform-origin: 224.2px 193.805px;" id="elq2fnip5vd1"
+                        class="animable"></polygon>
+                    <path
+                        d="M275.35,238.21a5.31,5.31,0,0,1-2.79-.79l.65-1a4.17,4.17,0,0,0,3.41.41,5.44,5.44,0,0,0,3.74-6,4.15,4.15,0,0,0-1.89-2.86l-8.33-5.17.65-1.05,8.33,5.17a5.39,5.39,0,0,1,2.46,3.69A6.69,6.69,0,0,1,277,238,5.66,5.66,0,0,1,275.35,238.21Z"
+                        style="fill: rgb(38, 50, 56); transform-origin: 275.899px 229.981px;" id="el6m16ji4uaop"
+                        class="animable"></path>
+                    <path
+                        d="M335.3,167.33c3.8,9.21-19.2,32.21-19.2,32.21l-11.9-9s8.23-12.06,11.62-20.34C320,160,332.4,160.32,335.3,167.33Z"
+                        style="fill: #9596BD; transform-origin: 319.962px 180.908px;" id="el57yyaw80jqh"
+                        class="animable"></path>
+                    <g id="el7a9i7cgclq7" class="">
+                        <path
+                            d="M335.3,167.33c3.8,9.21-19.2,32.21-19.2,32.21l-11.9-9s8.23-12.06,11.62-20.34C320,160,332.4,160.32,335.3,167.33Z"
+                            style="fill: rgb(255, 255, 255); opacity: 0.7; transform-origin: 319.962px 180.908px;"
+                            class="animable" id="elsemeppyqaw"></path>
+                    </g>
+                    <path
+                        d="M308,187.2c2.51,2.45,8.09,7.77,10.65,9.29a.85.85,0,0,1,.31,1.11c-.85,1.59-2.78,3.92-4.06,4.11-1.51.23-13.17-7.47-13.38-9.05-.13-1.07,2.33-3.8,3.92-5.43A1.8,1.8,0,0,1,308,187.2Z"
+                        style="fill: rgb(38, 50, 56); transform-origin: 310.284px 194.198px;" id="ele2sqw3iuvz"
+                        class="animable"></path>
+                    <path
+                        d="M366.09,190.59c3.13-1.57,10-5.11,12.25-7a.84.84,0,0,1,1.15.08c1.23,1.32,2.8,3.9,2.57,5.17-.28,1.51-11.37,10-12.92,9.7-1.06-.22-2.83-3.44-3.86-5.47A1.82,1.82,0,0,1,366.09,190.59Z"
+                        style="fill: rgb(38, 50, 56); transform-origin: 373.577px 190.974px;" id="elu78hqstex29"
+                        class="animable"></path>
+                    <path d="M281.21,220.59l-7.28,2.28,3.3,7.18s6.33-.84,7.58-6Z"
+                        style="fill: rgb(255, 139, 123); transform-origin: 279.37px 225.32px;" id="elj8o8cfi4z1c"
+                        class="animable"></path>
+                    <polygon points="270.62 226.69 273.27 231.44 277.23 230.05 273.93 222.87 270.62 226.69"
+                        style="fill: rgb(255, 139, 123); transform-origin: 273.925px 227.155px;" id="elr68e8hcej"
+                        class="animable"></polygon>
+                    <g id="elnvzb8etfudf" class="">
+                        <polygon points="335.21 392.12 335.58 400.75 342.82 400.75 342.45 392.12 335.21 392.12"
+                            style="opacity: 0.2; transform-origin: 339.015px 396.435px;" class="animable"
+                            id="eld2vx2yp8mnj"></polygon>
+                    </g>
+                    <g id="el28heeloul1q" class="">
+                        <polygon points="389.05 387.6 381.98 389.13 385.64 397.16 392.71 395.63 389.05 387.6"
+                            style="opacity: 0.2; transform-origin: 387.345px 392.38px;" class="animable"
+                            id="elfhp7sw4p7c"></polygon>
+                    </g>
+                    <path
+                        d="M354,137.57c-1.79,7-2.49,11.11-6.73,14-6.4,4.39-14.45-.51-14.77-7.85-.28-6.61,2.7-16.86,10.12-18.32A9.77,9.77,0,0,1,354,137.57Z"
+                        style="fill: rgb(255, 139, 123); transform-origin: 343.417px 139.216px;" id="elp6k5n884bur"
+                        class="animable"></path>
+                    <path
+                        d="M337.74,139.24a5.88,5.88,0,0,1,1.2-6.92c-2.22-1.15-4.27-5.1-2.13-7.38-5.75-1.33-2.57-7.3,6.36-6.72s1.94,4.35,1.94,4.35,19.22,1.49,12.28,8.49c3.05,1.83,3.33,8-1,10.95-7,4.8-4.83,10.16-10.16,9.2C341.37,150.33,337.17,144.89,337.74,139.24Z"
+                        style="fill: rgb(38, 50, 56); transform-origin: 346.79px 134.752px;" id="elbu1sy94glr"
+                        class="animable"></path>
+                    <path
+                        d="M340.48,138.2a5.72,5.72,0,0,1-2.63,3.92c-1.79,1-2.85.24-2.88-1.62,0-1.67.75-4.38,2.51-5S340.71,136.34,340.48,138.2Z"
+                        style="fill: rgb(255, 139, 123); transform-origin: 337.737px 138.959px;" id="elhqd1fjmp5kv"
+                        class="animable"></path>
+                    <path
+                        d="M338,225s8.2,55.24,12.7,75.93c4.94,22.66,31.31,95.31,31.31,95.31l12.93-2.8s-19.74-68-22.55-90.45c-3.06-24.36-9.45-78-9.45-78Z"
+                        style="fill: rgb(38, 50, 56); transform-origin: 366.47px 310.615px;" id="eltsxsc8fmsii"
+                        class="animable"></path>
+                    <path d="M378.54,390.44c-.06,0,2.77,6.16,2.77,6.16l14.56-3.15-1.59-5.86Z"
+                        style="fill: #9596BD; transform-origin: 387.205px 392.095px;" id="el9yvacp7doxj"
+                        class="animable"></path>
+                    <g id="eli1klwy3vh2i" class="">
+                        <path d="M378.54,390.44c-.06,0,2.77,6.16,2.77,6.16l14.56-3.15-1.59-5.86Z"
+                            style="fill: rgb(255, 255, 255); opacity: 0.7; transform-origin: 387.205px 392.095px;"
+                            class="animable" id="elyc49fak6jor"></path>
+                    </g>
+                    <g id="el8igkr9kk8k" class="">
+                        <path
+                            d="M343.17,244.68c9.49,1.86,8.48,37.23,7.34,55.42-2.73-12.86-6.74-37.6-9.47-55.16A3.18,3.18,0,0,1,343.17,244.68Z"
+                            style="opacity: 0.3; transform-origin: 346.132px 272.351px;" class="animable"
+                            id="elyrvy061yygp"></path>
+                    </g>
+                    <path
+                        d="M324.27,225s-1,54-.2,76.08c.81,22.93,8.82,98,8.82,98h12.25s.45-73.73,1-96.25c.59-24.54,3.56-77.83,3.56-77.83Z"
+                        style="fill: rgb(38, 50, 56); transform-origin: 336.73px 312.04px;" id="el82fcmn24w3x"
+                        class="animable"></path>
+                    <path d="M330.53,392.71s.7,6.58.7,6.58h14.89l.4-6Z"
+                        style="fill: #9596BD; transform-origin: 338.525px 396px;" id="elo0mnsg604l" class="animable">
+                    </path>
+                    <g id="ely38gk6szoz" class="">
+                        <path d="M330.53,392.71s.7,6.58.7,6.58h14.89l.4-6Z"
+                            style="fill: rgb(255, 255, 255); opacity: 0.7; transform-origin: 338.525px 396px;"
+                            class="animable" id="eljk01rjwvhuh"></path>
+                    </g>
+                </g>
+                <defs>
+                    <filter id="active" height="200%">
+                        <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>
+                        <feFlood flood-color="#32DFEC" flood-opacity="1" result="PINK"></feFlood>
+                        <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>
+                        <feMerge>
+                            <feMergeNode in="OUTLINE"></feMergeNode>
+                            <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
+                    </filter>
+                    <filter id="hover" height="200%">
+                        <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>
+                        <feFlood flood-color="#ff0000" flood-opacity="0.5" result="PINK"></feFlood>
+                        <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>
+                        <feMerge>
+                            <feMergeNode in="OUTLINE"></feMergeNode>
+                            <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
+                        <feColorMatrix type="matrix"
+                            values="0   0   0   0   0                0   1   0   0   0                0   0   0   0   0                0   0   0   1   0 ">
+                        </feColorMatrix>
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+    <script
+        type='text/javascript'>document.addEventListener('DOMContentLoaded', function () { window.setTimeout(document.querySelector('svg').classList.add('animated'), 1000); })</script>
+
+
+</body>
+
+</html>
